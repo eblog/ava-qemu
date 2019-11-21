@@ -1,3 +1,18 @@
+         AvA README
+         ==========
+
+This QEMU is modified to be used for AvA. It exposes a shared memory
+region and a few control registers to guest VM.
+
+The repository should be cloned to the AvA root directory (`$AVA_ROOT/qemu`),
+and simply build it in-tree:
+
+  ./configure
+  make
+
+There is no need to install it. The VM spawn script will find the QEMU
+binary based on the configuration file (`$AVA_ROOT/vm/scripts/environment`).
+
          QEMU README
          ===========
 
